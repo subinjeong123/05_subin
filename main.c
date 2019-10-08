@@ -3,27 +3,20 @@
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-int main(int argc, char *argv[]) {
-	int input;
+int main(int argc, char *argv[]) 
+{
+	int i=0, meter;
 	
-	
-	
-	printf("input a number :");
-	scanf("%d", &input);
-	
-	if (input > 0)
+	while (i<3)
 	{
-		printf("양수입니다\n");
-	}		
-	else if (input < 0)
-	{
-	
-		printf("음수입니다\n");
+		meter = i*1609;
+		printf("%d 마일은 %d 미터입니다.\n", i, meter);
+		i++;
 	}
-	else
-	{
-		printf("0입니다\n");
-	}
+	
+	
+	
+	
 	return 0;
 }
 	
